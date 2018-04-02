@@ -107,6 +107,10 @@
     <None Include="hwt_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\AZU - For You.mp3" />
+    <Content Include="Assets\gaomei3.jpg" />
+    <Content Include="Assets\gm7.jpg" />
+    <Content Include="Assets\Kenichiro Nishihara %28Music Video%29西原健一郎，音乐MV %282%29.mp4" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

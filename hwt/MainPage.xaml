@@ -6,8 +6,27 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/gaomei3.jpg" Opacity="0.9" />
+        </Grid.Background>
+        <StackPanel>
+            <Button Content="选择音频" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="48px"  Height="106" Width="244" Margin="10,0,0,0" Click="Button_Click_1">
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Text="MP3" Click="Button_Click"/>
+                        <MenuFlyoutSeparator/>
+                        <MenuFlyoutItem Text="MP4" Click="Button_Click"/>
+                    </MenuFlyout>
+                </Button.Flyout>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+            </Button>
+            <MediaElement x:Name="mediaPlayer"
+                          VerticalAlignment="Center"
+                          AreTransportControlsEnabled="True"
+                          AutoPlay="false"
+                          Source="Assets/Kenichiro Nishihara (Music Video)西原健一郎，音乐MV (2).mp4"
+                          Height="530" Margin="100,100,100,0" RenderTransformOrigin="0.492,1.674" />
+        </StackPanel>
     </Grid>
 </Page>
